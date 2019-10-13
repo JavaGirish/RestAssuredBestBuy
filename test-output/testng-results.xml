@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18402" started-at="2019-10-13T08:48:42Z" finished-at="2019-10-13T08:49:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18402" started-at="2019-10-13T08:48:42Z" finished-at="2019-10-13T08:49:00Z">
+      <class name="com.tests.categoriesAPITest">
+        <test-method status="PASS" signature="createNewcategory()[pri:1, instance:com.tests.categoriesAPITest@685cb137]" name="createNewcategory" duration-ms="12186" started-at="2019-10-13T08:48:42Z" finished-at="2019-10-13T08:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewcategory -->
+        <test-method status="PASS" signature="getNewCategory()[pri:2, instance:com.tests.categoriesAPITest@685cb137]" name="getNewCategory" duration-ms="271" started-at="2019-10-13T08:48:54Z" depends-on-methods="com.tests.categoriesAPITest.createNewcategory" finished-at="2019-10-13T08:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNewCategory -->
+        <test-method status="PASS" signature="updateNewCategory()[pri:3, instance:com.tests.categoriesAPITest@685cb137]" name="updateNewCategory" duration-ms="364" started-at="2019-10-13T08:48:55Z" depends-on-methods="com.tests.categoriesAPITest.getNewCategory" finished-at="2019-10-13T08:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateNewCategory -->
+        <test-method status="PASS" signature="deleteNewProduct()[pri:4, instance:com.tests.categoriesAPITest@685cb137]" name="deleteNewProduct" duration-ms="5452" started-at="2019-10-13T08:48:55Z" depends-on-methods="com.tests.categoriesAPITest.updateNewCategory" finished-at="2019-10-13T08:49:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNewProduct -->
+      </class> <!-- com.tests.categoriesAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
