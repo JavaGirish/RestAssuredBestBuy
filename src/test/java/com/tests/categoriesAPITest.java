@@ -38,7 +38,7 @@ public class categoriesAPITest {
 
 	}
 
-	@Test(priority=2,dependsOnMethods= {"createNewcategory"})
+	@Test(priority=2)
 	public void getNewCategory() {
 		given()
 
@@ -52,7 +52,7 @@ public class categoriesAPITest {
 
 	}
 
-	@Test(priority=3,dependsOnMethods= {"getNewCategory"})
+	@Test(priority=3)
 	public void updateNewCategory() {
 		HashMap<String, String> update = new HashMap<String, String>();
 		update.put("id", "abcat0105452");
@@ -62,14 +62,14 @@ public class categoriesAPITest {
 
 				.when().patch("http://localhost:3030/categories/abcat0105452")
 
-				.then().statusCode(200).log().body().body("name", equalTo("asics gel contend 4"));
+				.then().statusCode(201).log().body().body("name", equalTo("asics gel contend 4"));
 				System.out.println("new product details updated");
 				System.out.println("*************************************************");
 
 	}
 	
 	
-	@Test(priority=4,dependsOnMethods= {"updateNewCategory"})
+	@Test(priority=4)
 	public void deleteNewProduct() {
 		given()
 		
